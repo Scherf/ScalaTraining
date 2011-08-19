@@ -37,6 +37,10 @@ case class Time (hours: Int = 0, minutes : Int = 0 ) {
     minus(that)
   }
 
+  def + (that: Time) : Int = {
+    0
+  }
+
   object Time {
     // classic way for a static method in java, which doesn't exists in scala
     def fromMinutes(minutes: Int): Time = {
